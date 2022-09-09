@@ -1,0 +1,39 @@
+
+<hr>
+
+<a>
+  Lista apresentada sem a diretiva *ngFor
+</a>
+
+<ul>
+  <li>
+    {{ carros[0]}}
+  </li>
+  <li>
+    {{ carros[1]}}
+  </li>
+  <li>
+    {{ carros[2]}}
+  </li>
+  <li>
+    {{ carros[3]}}
+  </li>
+  <li>
+    {{ carros[4]}}
+  </li>
+</ul>
+
+<hr>
+
+<a>
+  Lista apresentada com a diretiva *ngFor
+</a>
+
+<ul>
+  <li *ngFor="let carro of carros">
+
+    {{ carro }}
+  </li>
+</ul>
+
+<hr>
